@@ -1,7 +1,6 @@
 {
   "name": "dsh-mcp-more-panel",
   "version": "0.1.0",
-  "private": true,
   "description": "MCP servers page for DeepSeek Harness, below Schedules in the left sidebar: manage global and project-specific servers, with approval for servers a repository declares.",
   "keywords": [
     "dsh-plugin",
