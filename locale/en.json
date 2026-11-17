@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "MCP servers",
+    "description": "Manage global and project-specific MCP servers from a dedicated left sidebar page; servers a repository declares run only after you approve them."
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "name": "dsh-mcp-more-panel",
+  "version": "0.1.0",
+  "private": true,
+  "description": "MCP servers page for DeepSeek Harness, below Schedules in the left sidebar: manage global and project-specific servers, with approval for servers a repository declares.",
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh",
+    "mcp",
+    "mcp-client",
+    "mcp-manager",
+    "project-scope"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xuanfenglajiao/dsh-mcp-more-panel.git"
+  },
+  "homepage": "https://github.com/xuanfenglajiao/dsh-mcp-more-panel#readme",
+  "bugs": {
+    "url": "https://github.com/xuanfenglajiao/dsh-mcp-more-panel/issues"
+  },
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "lib/*.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "docs/*.md",
+    "docs/screenshots/*"
+  ],
+  "engines": {
+    "node": ">=22.19",
+    "dsh": ">=0.2.2-rc.1"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-mcp-client": ">=0.2.2-rc.1",
+    "@deepseek-ai/dsh-tools": ">=0.2.2-rc.1"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "compatibility": {
+      "dshReleases": {
+        "0.2.2-rc.1": "compatible"
+      }
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  }
+}

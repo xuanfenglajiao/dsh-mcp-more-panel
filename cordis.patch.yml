@@ -1,0 +1,4 @@
+# Mount this MCP management page bundle.
+- insert:
+    - id: mcp-more-panel
+      name: dsh-mcp-more-panel
